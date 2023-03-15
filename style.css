@@ -88,6 +88,7 @@
     color: #fff;
 }
 .content h1{
+    position: relative;
     font-size: 70px;
     margin-top: 80px;
 }
@@ -132,30 +133,31 @@ button:hover{
 
 .toggle-button {
     position: absolute;
-    top: 3.5rem;
+    top: 3.25rem;
     right: 2.5rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 31px;
-    height: 24px;
+    width: 40px;
+    height: 34px;
 }
 
 .toggle-button .bar {
-    height: 3px;
+    height: 4px;
     width: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) { /* This is for mobile devices for landscape and portrait mode */
+
     .logo {
         padding-left: 12%;
     }
 
     .navbar {
         flex-direction: column;
-        padding-bottom: 20px;
+        padding-bottom: 2%;
         align-items: flex-start;
     }
 
@@ -179,12 +181,12 @@ button:hover{
         height: 100%;
     }
 
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
     .navbar-links.active {
         display: flex;
+    }
+
+    .content .navbar-links.active{
+        padding-top: 50%;
     }
 
     .navbar-links ul li{
@@ -202,16 +204,17 @@ button:hover{
     
     .navbar-links ul li::after{
         content: url();
-        height: 15px;
+        height: 25px;
         width: 0;
-        background: #707070;
+        background: #fff;
         opacity: 30%;
         position: absolute;
         left: 0;
-        bottom: 7px;
+        bottom: 2px;
         transition: 0.5s;
     }
     .navbar-links ul li:hover::after{
         width: 100%;
+
     }
 }
