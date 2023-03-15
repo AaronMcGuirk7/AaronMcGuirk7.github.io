@@ -111,8 +111,7 @@ button{
     overflow: hidden;
 }
 
-/*
-span{
+button span{
     background: #707070;
     height: 100%;
     width: 0;
@@ -123,9 +122,6 @@ span{
     z-index: -1;
     transition: 0.5s;
 }
-
-*/
-
 
 button:hover span{
     width: 100%;
