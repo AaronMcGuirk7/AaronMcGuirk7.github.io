@@ -4,13 +4,9 @@ window.addEventListener("load", function(){
     loader.style.display = "none";
 })
 
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-//window.addEventListener("load", () => {
-//    const loader = document.querySelector(".loader");
-//
-//    loader.classList.add("loader-hidden");
-//
-//    loader.addEventListener("transitioned", () => {
-//        document.body.removeChild("loader");
-//    })
-//})
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+})
