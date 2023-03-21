@@ -1,46 +1,119 @@
 <!DOCTYPE html>
-<head>
-    <title>Aaron McGuirk - Home</title>
-    <link rel="stylesheet" type= "text/css" href="home.css">
-    <link rel="stylesheet" type= "text/css" href="background.css">
-    <link rel="stylesheet" type= "text/css" href="style.css">
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
     <script src="src/js/script.js" defer></script>
-</head>
-
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
     <div id="preloader"></div>
-    
-        <nav class="navbar">
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name"><img src="src/img/custlogo.png"></div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Explore</span>
+        </a>
+         <span class="tooltip">Explore</span>
+      </li>
+      <li>
+       <a href="home.html">
+         <i class='bx bx-home' ></i>
+         <span class="links_name">Home</span>
+       </a>
+       <span class="tooltip">Home</span>
+     </li>
+     <li>
+       <a href="about.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">About</span>
+       </a>
+       <span class="tooltip">About</span>
+     </li>
+     <li>
+       <a href="hobbies.html">
+         <i class='bx bx-bolt-circle' ></i>
+         <span class="links_name">Hobbies</span>
+       </a>
+       <span class="tooltip">Hobbies</span>
+     </li>
+     <li>
+       <a href="projects.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Projects</span>
+       </a>
+       <span class="tooltip">Projects</span>
+     </li>
+     <li>
+       <a href="resume.html">
+         <i class='bx bx-file' ></i>
+         <span class="links_name">Resume</span>
+       </a>
+       <span class="tooltip">Resume</span>
+     </li>
+     <li>
+       <a href="contact.html">
+         <i class='bx bx-envelope' ></i>
+         <span class="links_name">Contact</span>
+       </a>
+       <span class="tooltip">Contact</span>
+     </li>
+     <li>
+       <a href="settings.html">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Settings</span>
+       </a>
+       <span class="tooltip">Settings</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="name">Aaron McGuirk</div>
+             <div class="job">Copyright © 2023</div>
+           </div>
+         </div>
+         <i class='bx bx-check-shield' id="copyright" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Explore</div>
+      <div class="content">
+        <img src="https://picsum.photos/600/450/?random&#39">
+    </div>
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
-            <img src="src/img/custlogo.png" class="logo">
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
 
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
+  searchBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
 
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="resume.html">Resume</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    
-
-        <div class="content">
-            <h1>COMING SOON</h1>
-            <p>Website demonstrating my understanding of HTML, CSS, JavaScript,
-                <br>etc and the final project of my Independent Learning!
-            <div>
-                <button type="button" onclick="parent.location='projects.html'"><span></span>PROJECTS</button>
-                <button type="button" onclick="parent.location='contact.html'"><span></span>CONTACT</button>
-            </p>
-            </div>
-        </div>
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
 </body>
 </html>
