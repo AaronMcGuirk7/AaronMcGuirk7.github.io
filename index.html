@@ -197,62 +197,36 @@
       <div class="resume-content">
           <div class="column left">
               <div class="text">
-                <div class="select-box">
-                    <div class="options-container">
-                      <div class="option">
-                        <input
-                          type="radio"
-                          class="radio"
-                          id="education"
-                          name="category"
-                        />
-                        <label for="experience">Education</label>
-                      </div>
-            
-                      <div class="option">
-                        <input type="radio" class="radio" id="experience" name="category" />
-                        <label for="experience">Experience</label >
-                      </div>
-            
-                      <div class="option">
-                        <input type="radio" class="radio" id="project" name="category" />
-                        <label for="project">Projects</label>
-                      </div>
-            
-                      <div class="option">
-                        <input type="radio" class="radio" id="skill" name="category" />
-                        <label for="skill">Skills</label>
-                      </div>
-            
-                      <div class="option">
-                        <input type="radio" class="radio" id="social" name="category" />
-                        <label for="social">Socials</label>
-                      </div>
-                    </div>
-            
-                    <div class="selected">
-                        Select Resume Category  
+
+                <div class="wrapper">
+                    <div class="menu">
+                        <select id="name">
+                            <option value="education">Education</option>
+                            <option value="project">Projects</option>
+                            <option value="skill">Skills</option>
+                            <option value="social">Socials</option>
+                        </select>
                     </div>
 
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
 
           <div class="column right">
 
-            <div class="education" id="data">
+            <div id="education" class="data">
                 <h1> This is my education </h1>
             </div>
 
-            <div class="project" id="data">
+            <div id="project" class="data">
                 <h1> This is my projects </h1>
             </div>
 
-            <div class="skills" id="data">
+            <div id="skill" class="data">
                 <h1> This is my skills </h1>
             </div>
 
-            <div class="social" id="data">
+            <div id="social" class="data">
                 <h1> This is my socials </h1>
             </div>
 
@@ -260,6 +234,17 @@
             </div>
       </div>
   </div>
+
+
+  <script>
+    $(document).ready(function(){
+        $("#name").on('change', function(){
+            $(".data").hide();
+            $("#" + $(this).val()).fadeIn(700);
+        }).change();
+    });
+    
+    </script>
 </section>
 
 <!-- projects section start -->
