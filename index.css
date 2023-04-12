@@ -140,7 +140,6 @@ section .title::after{
 .about{
     margin-left: 75px;
 }
-}
 .about .title::after{
     content: "";
 }
@@ -300,12 +299,12 @@ section .title::after{
 .projects .proj-content .card:hover i{
     color: #fff;
 }
-.projects .proj-content .card .text{
+.projects .proj-content .card .box .text{
+    text-align: center;
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-
 .projects .proj-content .card a{
     display: inline-block;
     background: crimson;
@@ -332,7 +331,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 .data {
-    display: none;
+    display: block;
 }
 
 .resume{
@@ -405,7 +404,7 @@ section .title::after{
 }
 
 .select-menu{
-    width: 380px;
+    width: 300px;
     margin: 25px auto;
 }
 .select-menu .select-btn{
@@ -460,45 +459,6 @@ section .title::after{
     font-size: 18px;
     color: #333;
 }
-/*
-
-.wrapper{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 70px 0;
-    max-width: 400px;
-    margin: 0 auto;
-}
-.menu {
-    width: 100%;
-}
-
-.menu option {
-    display: flex;
-    height: 55px;
-    cursor: pointer;
-    padding: 0 16px;
-    border-radius: 8px;
-    align-items: center;
-    background: #fff;
-}
-
-select {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
-    border: 2px solid #222;
-    box-shadow: 0 15px 15px #efefef;
-    appearance: none;
-    background: #fff url(src/img/arrow.png) no-repeat;
-    background-position: 95% 55%;
-    background-size: 22px;
-}
-*/
 
 /* contact section styling */
 .contact{
@@ -609,7 +569,7 @@ select {
 }
 .text, .fields{
     padding-bottom: 22px;
-    display: flex;
+    /* display: flex; */
 }
 /* footer section styling */
 footer{
