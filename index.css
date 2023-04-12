@@ -331,7 +331,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 .data {
-    /* display: none; */
+    display: none;
 }
 
 .resume{
@@ -340,24 +340,17 @@ section .title::after{
 .resume .resume-content .column{
     width: calc(50% - 30px);
 }
-.resume .resume-content .left .bars{
-    margin-bottom: 15px;
+.resume .resume-content .left {
+    margin-top: -120px;
 }
-.resume .resume-content .left .info{
-    display: flex;
-    margin-bottom: 5px;
-    align-items: center;
-    justify-content: space-between;
+.resume .resume-content .left .data {
+    margin-top: 60px;
 }
-.resume .resume-content .left span{
-    font-weight: 500;
-    font-size: 18px;
+.resume .resume-content .right {
+    margin-top: 40px;
 }
-.resume .resume-content .left .line{
-    height: 5px;
-    width: 100%;
-    background: lightgrey;
-    position: relative;
+.resume .resume-content .right .data {
+    margin-top: 30px;
 }
 .resume .resume-content .right .line::before{
     content: "";
