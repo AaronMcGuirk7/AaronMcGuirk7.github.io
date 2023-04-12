@@ -331,7 +331,7 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
 }
 .data {
-    display: block;
+    display: none;
 }
 
 .resume{
@@ -406,8 +406,9 @@ section .title::after{
 .select-menu{
     width: 300px;
     margin: 25px auto;
+    display: grid;
 }
-.select-menu .select-btn{
+/* .select-menu .select-btn{
     display: flex;
     height: 55px;
     background: #fff;
@@ -427,6 +428,7 @@ section .title::after{
 .select-menu.active .select-btn i{
     transform: rotate(-180deg);
 }
+*/
 .select-menu .options{
     position: relative;
     padding: 20px;
@@ -434,7 +436,7 @@ section .title::after{
     border-radius: 8px;
     background: #fff;
     box-shadow: 0 0 3px rgba(0,0,0,0.1);
-    display: none;
+    display: grid;
 }
 .select-menu.active .options{
     display: block;
