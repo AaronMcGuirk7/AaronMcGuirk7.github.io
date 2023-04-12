@@ -340,29 +340,32 @@ section .title::after{
 .resume .resume-content .column{
     width: calc(50% - 30px);
 }
-.resume .resume-content .left .text{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.resume .resume-content .left .bars{
+    margin-bottom: 15px;
 }
-.resume .resume-content .left p{
-    text-align: justify;
+.resume .resume-content .left .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
-.resume .resume-content .left a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 18px;
+.resume .resume-content .left span{
     font-weight: 500;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
+    font-size: 18px;
 }
-.resume .resume-content .left a:hover{
-    color: crimson;
-    background: none;
+.resume .resume-content .left .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.resume .resume-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
 }
 .resume .resume-content .right .bars{
     margin-bottom: 15px;
