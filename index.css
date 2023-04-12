@@ -537,6 +537,8 @@ select {
 }
 .contact .contact-content .info .head{
     font-weight: 500;
+    margin-bottom: -5px;
+
 }
 .contact .contact-content .info .sub-title{
     color: #333;
@@ -599,6 +601,15 @@ select {
 .right form .button-area button:hover{
   color: crimson;
   background: none;
+}
+.row{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+}
+.text, .fields{
+    padding-bottom: 22px;
+    display: flex;
 }
 /* footer section styling */
 footer{
