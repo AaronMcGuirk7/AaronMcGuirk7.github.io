@@ -96,62 +96,108 @@ options.forEach(option =>{
 });
 //END
 
-var span1 = document.getElementById('edu'); // Assumes element with id='edu'
-var span2 = document.getElementById('exp'); // Assumes element with id='edu'
-var span3 = document.getElementById('proj'); // Assumes element with id='edu'
-var span4 = document.getElementById('skil'); // Assumes element with id='edu'
-var span5 = document.getElementById('soci'); // Assumes element with id='edu'
+    var varEDU = document.getElementById('education');
+    var varEXP = document.getElementById('experience');
+    var varPROJ = document.getElementById('project');
+    var varSKIL = document.getElementById('skill');
+    var varSOCI = document.getElementById('media');
+    varEXP.style.display = "none";
+    varPROJ.style.display = "none";
+    varSKIL.style.display = "none";
+    varSOCI.style.display = "none";
 
-span1.onclick = function() {
+    var span1 = document.getElementById('edu'); // Assumes element with id='edu'
+    var span2 = document.getElementById('exp'); // Assumes element with id='edu'
+    var span3 = document.getElementById('proj'); // Assumes element with id='edu'
+    var span4 = document.getElementById('skil'); // Assumes element with id='edu'
+    var span5 = document.getElementById('soci'); // Assumes element with id='edu'
 
-    var div = document.getElementById('education');
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    }
-    else {
-        div.style.display = "none";
-    }
-};
-span2.onclick = function() {
+    span1.onclick = function() {
+        var div = document.getElementById('education');
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            varEXP.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
 
-    var div = document.getElementById('experience');
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    }
-    else {
-        div.style.display = "none";
-    }
-};
-span3.onclick = function() {
-
-    var div = document.getElementById('project');
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    }
-    else {
-        div.style.display = "none";
-    }
-};
-span4.onclick = function() {
-
-    var div = document.getElementById('skill');
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    }
-    else {
-        div.style.display = "none";
-    }
-};
-span5.onclick = function() {
-
-    var div = document.getElementById('media');
-    if (div.style.display === "none") {
-        div.style.display = "block";
-    }
-    else {
-        div.style.display = "none";
-    }
-};
+        }
+        else {
+            div.style.display = "none";
+            varEXP.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+    };
+    span2.onclick = function() {
+        var div = document.getElementById('experience');
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+        else {
+            div.style.display = "none";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+    };
+    span3.onclick = function() {
+        var div = document.getElementById('project');
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+        else {
+            div.style.display = "none";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varSKIL.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+    };
+    span4.onclick = function() {
+        var div = document.getElementById('skill');
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+        else {
+            div.style.display = "none";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSOCI.style.display = "none";
+        }
+    };
+    span5.onclick = function() {
+        var div = document.getElementById('media');
+        if (div.style.display === "none") {
+            div.style.display = "block";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+        }
+        else {
+            div.style.display = "none";
+            varEXP.style.display = "none";
+            varEDU.style.display = "none";
+            varPROJ.style.display = "none";
+            varSKIL.style.display = "none";
+        }
+    };
 
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");

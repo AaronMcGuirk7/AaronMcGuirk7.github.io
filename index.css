@@ -330,8 +330,13 @@ section .title::after{
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
-.data {
-    display: none;
+
+.scrollable {
+    overflow-y: scroll; /* add vertical scroll bar */
+    height: 500px; /* set height of the scrollable area */
+  }
+.resume .resume-content .right .scrollable .edu,.exp,.proj,.skil,.soci {
+   display: none;
 }
 
 .resume{
