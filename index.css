@@ -277,7 +277,8 @@ section .title::after{
     background: #222;
     text-align: center;
     border-radius: 6px;
-    padding: 50px 25px;
+    padding: 50px 35px;
+    margin-top: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -302,6 +303,23 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+}
+
+.projects .proj-content .card a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card a:hover{
+    color: crimson;
+    background: none;
 }
 
 /* resume section styling */
@@ -434,6 +452,7 @@ select{
     display: flex;
     height: 65px;
     align-items: center;
+    margin-bottom: 30px;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
