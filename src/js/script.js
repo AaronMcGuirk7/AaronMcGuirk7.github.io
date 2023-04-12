@@ -96,6 +96,63 @@ options.forEach(option =>{
 });
 //END
 
+var span1 = document.getElementById('edu'); // Assumes element with id='edu'
+var span2 = document.getElementById('exp'); // Assumes element with id='edu'
+var span3 = document.getElementById('proj'); // Assumes element with id='edu'
+var span4 = document.getElementById('skil'); // Assumes element with id='edu'
+var span5 = document.getElementById('soci'); // Assumes element with id='edu'
+
+span1.onclick = function() {
+
+    var div = document.getElementById('education');
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+    else {
+        div.style.display = "none";
+    }
+};
+span2.onclick = function() {
+
+    var div = document.getElementById('experience');
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+    else {
+        div.style.display = "none";
+    }
+};
+span3.onclick = function() {
+
+    var div = document.getElementById('project');
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+    else {
+        div.style.display = "none";
+    }
+};
+span4.onclick = function() {
+
+    var div = document.getElementById('skill');
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+    else {
+        div.style.display = "none";
+    }
+};
+span5.onclick = function() {
+
+    var div = document.getElementById('media');
+    if (div.style.display === "none") {
+        div.style.display = "block";
+    }
+    else {
+        div.style.display = "none";
+    }
+};
+
 const selected = document.querySelector(".selected");
 const optionsContainer = document.querySelector(".options-container");
 

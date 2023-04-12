@@ -323,6 +323,9 @@ section .title::after{
 }
 
 /* resume section styling */
+.data {
+    display: none;
+}
 
 .resume{
     margin-left: 75px;
