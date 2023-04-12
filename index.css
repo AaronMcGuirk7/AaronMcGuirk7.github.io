@@ -323,16 +323,19 @@ section .title::after{
 }
 
 /* resume section styling */
+.rtitle{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+}
 .data {
-    display: none;
+    /* display: none; */
 }
 
 .resume{
     margin-left: 75px;
-}
-
-.resume .title::after{
-    content: "";
 }
 .resume .resume-content .column{
     width: calc(50% - 30px);
@@ -406,7 +409,7 @@ section .title::after{
 
 .select-menu{
     width: 380px;
-    margin: 140px auto;
+    margin: 25px auto;
 }
 .select-menu .select-btn{
     display: flex;
