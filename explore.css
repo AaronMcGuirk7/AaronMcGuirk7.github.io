@@ -177,47 +177,14 @@ section .title::after{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
-  margin-right: 0;
-}
-.home .home-content .text-1{
-    font-size: 27px;
-}
-.home .home-content .text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-.home .home-content .text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span{
-    color: crimson;
-    font-weight: 500;
-}
-.home .home-content a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.home .home-content a:hover{
-    color: rgb(134, 116, 119);
-    background: none;
-}
-
-.home .home-content .image{
-    padding-left: 600px;
-    height: 100px;
-    width: 100px;
+.home .home-content .videoplayer{
+    height: auto; 
+    width: auto;
+    border: 5px solid #fff;
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+    size-adjust: auto;
 }
 
 /* footer section styling */

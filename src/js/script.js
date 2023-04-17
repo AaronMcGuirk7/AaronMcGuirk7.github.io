@@ -101,6 +101,7 @@ options.forEach(option =>{
     var varPROJ = document.getElementById('project');
     var varSKIL = document.getElementById('skill');
     var varSOCI = document.getElementById('media');
+    varEDU.style.display = "block";
     varEXP.style.display = "none";
     varPROJ.style.display = "none";
     varSKIL.style.display = "none";

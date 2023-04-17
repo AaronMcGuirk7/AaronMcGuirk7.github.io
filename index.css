@@ -413,10 +413,10 @@ section .title::after{
     margin: 25px auto;
     display: grid;
 }
-/* .select-menu .select-btn{
+ .select-menu .select-btn{
     display: flex;
     height: 55px;
-    background: #fff;
+    background: #f0efef;
     padding: 20px;
     font-size: 18px;
     font-weight: 400;
@@ -433,7 +433,7 @@ section .title::after{
 .select-menu.active .select-btn i{
     transform: rotate(-180deg);
 }
-*/
+
 .select-menu .options{
     position: relative;
     padding: 20px;
