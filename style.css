@@ -15,6 +15,91 @@
     z-index: 100;
 }
 
+.sidebar.open .toggleColor{
+  margin-left: 6px;
+}
+
+.sidebar.open .tleft {
+  float: left;
+  margin-top: -10px;
+  margin-left: -5px;
+}
+.sidebar.open .tmiddle {
+  float: middle;
+}
+.sidebar.open .tright {
+  float: right;
+  margin: -40px;
+  margin-right: 35px;
+}
+
+.sidebar.open #toggle {
+  margin-left: -20px;
+  display: flex;
+  position: relative;
+  width: 90px;
+  height: 30px;
+  border-radius: 30px;
+  background: #252d55;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+              inset 0 8px 8px rgba(0,0,0,0.1),
+              inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+.sidebar #toggle {
+  margin: auto;
+  display: flex;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #252d55;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0,0,0,0.1),
+              inset 0 8px 8px rgba(0,0,0,0.1),
+              inset 0 -4px 4px rgba(0,0,0,0.1);
+}
+.sidebar #toggle.active{
+  background-color: #fff;
+}
+.sidebar.open #toggle .indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 30px;
+  transform: scale(0.9);
+  box-shadow: inset 0 8px 40px rgba(0,0,0,0.5),
+              inset 0 4px 4px rgba(255,255,255,0.2),
+              inset 0 -4px 4px rgba(255,255,255,0.2);
+  transition: 0.5s;
+}
+.sidebar.open #toggle.active .indicator{
+  left: 40px;
+}
+
+.sidebar #toggle .indicator i{
+  position: absolute;
+  top: 0;
+  left: 30;
+  width: 0px;
+  height: 0px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 30px;
+  transform: scale(0.9);
+  box-shadow: inset 0 8px 40px rgba(0,0,0,0.5),
+              inset 0 4px 4px rgba(255,255,255,0.2),
+              inset 0 -4px 4px rgba(255,255,255,0.2);
+  transition: 0.5s;
+}
+.sidebar #toggle.active .indicator{
+  left: 0px;
+}
+
 .sidebar{
   position: fixed;
   left: 0;

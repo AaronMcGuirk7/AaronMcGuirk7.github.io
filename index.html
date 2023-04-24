@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
     <script src="src/js/script.js" defer></script>
+    <script src="src/js/css-color-inverter.js" defer></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
@@ -87,6 +88,29 @@
        </a>
        <span class="tooltip">Settings</span>
      </li>
+     <li>
+        <div class="toggleColor">
+            <div class="tleft">
+                <i class='bx bx-sun'></i>
+            </div>
+            <div class="tmiddle">
+                <div id="toggle">
+                    <i class="indicator"></i>
+                </div>
+            </div>
+            <div class="tright">
+                <i class='bx bx-moon'></i>
+            </div>
+        </div>
+     </li>>
+     <script>
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active')
+            home.classList.toggle('active')
+        }
+     </script>
+
      <li class="profile">
          <div class="profile-details">
            <div class="name_job">
@@ -123,8 +147,8 @@
             </div>
             <div class="column right">
                 <div class="text">I'm Aaron and I'm a  &nbsp <span class="typing-2"></span></div>
-                <p>I am a Computer Science graduate from the Siena College Class of 2023. I was born and raised in New York and I grew up in a small town of Valatie NY which resides inside of Columbia County. 
-                    I currently work at a company called AngioDynamics, which is a large medical device company headquartered in Latham NY. Where we specialize in innovative medical devices 
+                <p>I am a Computer Science graduate from the Siena College Class of 2023. I was born and raised in New York and I grew up in the small town of Valatie NY which resides in Columbia County. 
+                    I currently work for a company called AngioDynamics, which is a large medical device company headquartered in Latham NY. Where we specialize in innovative medical devices 
                     and strive to address any and all unmet patient needs by elevating the standard care of chronic and acute disease states in vascular, peripheral vascular, and oncology medicine.
                     My job involves me providing end-to-end user support for all of our local and international facilities, employees, and heathcare professionals in and out of the field. With a duty 
                     to provide safe and healthy medical treatments for all and to pave the way for a bright future for everyone to enjoy.</p>
