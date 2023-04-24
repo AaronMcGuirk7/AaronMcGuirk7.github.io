@@ -23,7 +23,7 @@
     <div id="preloader"></div>
     <div class="sidebar">
     <div class="logo-details">
-        <div class="logo_name"><img src="src/img/custlogo.png"></div>
+        <div class="logo_name"><img src="src/img/custlogo.png" id="dimg"><img src="src/img/custlogodark.png" id="wimg"></div>
         <i class='bx bx-menu' id="btn" ></i>
     </div>
     <ul class="nav-list">
@@ -102,7 +102,7 @@
                 <i class='bx bx-moon'></i>
             </div>
         </div>
-     </li>>
+     </li>
      <script>
         const toggle = document.getElementById('toggle');
         toggle.onclick = function(){
@@ -113,7 +113,7 @@
             resume.classList.toggle('active')
             projects.classList.toggle('active')
             contact.classList.toggle('active')
-            footer.classList.toggle('active')
+            sidebar.classList.toggle('active')
         }
      </script>
 
