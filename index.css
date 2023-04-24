@@ -77,10 +77,10 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* home section styling */
+/* home section styling light */
 .home{
     display: flex;
-    background: url("src/img/background.jpeg") no-repeat center;
+    background: url("src/img/lightbackground.jpeg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -98,13 +98,16 @@ section .title::after{
 }
 .home .home-content .text-1{
     font-size: 27px;
+    color: black;
 }
 .home .home-content .text-2{
+    color: rgb(53, 51, 51);
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
 .home .home-content .text-3{
+    color: black;
     font-size: 40px;
     margin: 5px 0;
 }
@@ -135,8 +138,62 @@ section .title::after{
     height: 100px;
     width: 100px;
 }
+/* home section styling dark */
+.home.active{
+    display: flex;
+    background: url("src/img/background.jpeg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 75px;
+}
+.home.active .home-content .text-1{
+    color: white;
+    font-size: 27px;
+}
+.home.active .home-content .text-2{
+    color: white;
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home.active .home-content .text-3{
+    color: white;
+    font-size: 40px;
+    margin: 5px 0;
+}
 
-/* about section styling */
+.home.active .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+.home.active .home-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home.active .home-content a:hover{
+    color: rgb(134, 116, 119);
+    background: none;
+}
+
+.home.active .home-content .image{
+    padding-left: 600px;
+    height: 100px;
+    width: 100px;
+}
+
+/* about section styling light */
 .about{
     margin-left: 75px;
 }
@@ -183,23 +240,50 @@ section .title::after{
     color: crimson;
     background: none;
 }
+/* about section styling dark */
+.about.active{
+    color: #fff;
+    background-color: #0a0c16;
+}
+.about.active .about-content .right .text{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about.active .about-content .right p{
+    color: #fff;
+    text-align: justify;
+}
+.about.active .about-content .right a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
 
-/* hobbies section styling */
+/* hobbies section styling light*/
 .hobbies {
     margin-left: 75px;
-    color: #fff;
-    background: #111;
+    color: #111;
+    background: #f2f2f2;
 }
 
 .hobbies .title::before{
-    background: #fff;
+    background: #111;
 }
 .hobbies .title::after{
     content: "";
     background-color: #111;
 }
 .hobbies .carousel .card{
-    background: #222;
+    background: #fff;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -232,7 +316,58 @@ section .title::after{
     border: 5px solid crimson;
     transition: all 0.3s ease;
 }
-.hobbies .carousel .card:hover img{
+.hobbies.carousel .card:hover img{
+    border-color: #fff;
+}
+/* hobbies section styling dark*/
+.hobbies.active {
+    margin-left: 75px;
+    color: #fff;
+    background: #111;
+}
+
+.hobbies.active .title::before{
+    background: #fff;
+}
+.hobbies.active .title::after{
+    content: "";
+    background-color: #111;
+}
+.hobbies.active .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.hobbies.active .carousel .card:hover{
+    background: crimson;
+}
+.hobbies.active .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.hobbies.active .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.hobbies.active .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.hobbies.active .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.hobbies.active .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -257,72 +392,7 @@ section .title::after{
     background: crimson!important;
 }
 
-/* projects section styling */
-.projects{
-    margin-left: 75px;
-    color:#fff;
-    background: #111;
-}
-.projects .title::before,
-.teams .title::before{
-    background: #fff;
-}
-.projects .title::after,
-.teams .title::after{
-    background: #111;
-    content: "";
-}
-.projects .proj-content .card{
-    width: calc(33% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 35px;
-    margin-top: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.projects .proj-content .card:hover{
-    background: crimson;
-}
-.projects .proj-content .card .box{
-    transition: all 0.3s ease;
-}
-.projects .proj-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects .proj-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-.projects .proj-content .card:hover i{
-    color: #fff;
-}
-.projects .proj-content .card .box .text{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.projects .proj-content .card a{
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.projects .proj-content .card a:hover{
-    color: crimson;
-    background: none;
-}
-
-/* resume section styling */
+/* resume section styling light*/
 .rtitle{
     position: relative;
     text-align: center;
@@ -466,8 +536,299 @@ section .title::after{
     font-size: 18px;
     color: #333;
 }
+/* resume section styling dark*/
+.resume.active .rtitle{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
 
-/* contact section styling */
+.resume.active ::-webkit-scrollbar-track {
+    background: #888;
+}
+.resume.active ::-webkit-scrollbar-thumb {
+    background: #f1f1f1;
+}
+
+.resume.active ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.resume.active .scrollable {
+    overflow-y: scroll; /* add vertical scroll bar */
+    height: 500px; /* set height of the scrollable area */
+    color: #fff;
+  }
+.resume.active .resume-content .right .scrollable .edu,.exp,.proj,.skil,.soci {
+   display: none;
+}
+
+.resume.active{
+    background-color: #0a0c16;
+    margin-left: 75px;
+}
+.resume.active .resume-content .column{
+    width: calc(50% - 30px);
+}
+.resume.active .resume-content .left {
+    margin-top: -120px;
+}
+.resume.active .resume-content .left .data {
+    margin-top: 60px;
+}
+.resume.active .resume-content .right {
+    margin-top: 40px;
+}
+.resume.active .resume-content .right .data {
+    margin-top: 30px;
+}
+.resume.active .resume-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.resume.active .resume-content .right .bars{
+    margin-bottom: 15px;
+}
+.resume.active .resume-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.resume.active .resume-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.resume.active .resume-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.resume.active .resume-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.resume.active .resume-content .right .html::before{
+    width: 90%;
+}
+.resume.active .resume-content .right .css::before{
+    width: 60%;
+}
+.resume.active .resume-content .right .js::before{
+    width: 80%;
+}
+.resume.active .resume-content .right .php::before{
+    width: 50%;
+}
+.resume.active .resume-content .right .mysql::before{
+    width: 70%;
+}
+
+.resume.active .select-menu{
+    width: 300px;
+    margin: 25px auto;
+    display: grid;
+    color: #fff;
+}
+.resume.active .select-menu .select-btn{
+    display: flex;
+    height: 55px;
+    background: #0a0c16;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 8px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+.resume.active .select-btn i{
+    font-size: 25px;
+    transition: 0.3s;
+}
+.resume.active.select-menu.active .select-btn i{
+    transform: rotate(-180deg);
+}
+
+.resume.active .select-menu .options{
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #0a0c16;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+    display: grid;
+}
+.resume.active .select-menu.active .options{
+    color: #fff;
+    display: block;
+}
+.resume.active .options .option{
+    color: #fff;
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #0a0c16;
+}
+.resume.active .options .option:hover{
+    background-color: #111;
+}
+.resume.active .option i{
+    color: #fff;
+    font-size: 25px;
+    margin-right: 12px;
+}
+.resume.active .option .option-text{
+    color: #fff;
+    font-size: 18px;
+}
+
+/* projects section styling light*/
+.projects{
+    margin-left: 75px;
+    color:#111;
+    background: #f2f2f2;
+}
+.projects .title::before,
+.teams .title::before{
+    background: #111;
+}
+.projects .title::after,
+.teams .title::after{
+    background: #111;
+    content: "";
+}
+.projects .proj-content .card{
+    width: calc(33% - 20px);
+    background: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 35px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover{
+    background: crimson;
+}
+.projects .proj-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .proj-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects .proj-content .card:hover i{
+    color: #fff;
+}
+.projects .proj-content .card .box .text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .proj-content .card a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects .proj-content .card a:hover{
+    color: crimson;
+    background: none;
+}
+/* projects section styling dark*/
+.projects.active{
+    margin-left: 75px;
+    color:#fff;
+    background: #111;
+}
+.projects.active .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.projects.active .title::after,
+.teams .title::after{
+    background: #111;
+    content: "";
+}
+.projects.active .proj-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 35px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.projects.active .proj-content .card:hover{
+    background: crimson;
+}
+.projects.active .proj-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects.active .proj-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects.active .proj-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.projects.active .proj-content .card:hover i{
+    color: #fff;
+}
+.projects.active .proj-content .card .box .text{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects.active .proj-content .card a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.projects.active .proj-content .card a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* contact section styling light*/
 .contact{
     margin-left: 75px;
 }
@@ -493,7 +854,7 @@ section .title::after{
     display: flex;
     height: 65px;
     align-items: center;
-    margin-bott: 30px;
+    margin-bottom: 30px;
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
@@ -576,9 +937,120 @@ section .title::after{
 }
 .text, .fields{
     padding-bottom: 22px;
-    /* display: flex; */
 }
-/* footer section styling */
+/* contact section styling dark*/
+.contact.active{
+    margin-left: 75px;
+    background-color: #0a0c16;
+    color: #fff;
+}
+.contact.active .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact.active .contact-content .text{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact.active .contact-content .left p{
+    color: #fff;
+    text-align: justify;
+}
+.contact.active .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact.active .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.contact.active .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact.active .contact-content .row i{
+    font-size: 25px;
+    color: crimson;
+}
+.contact.active .contact-content .info .head{
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: -5px;
+
+}
+.contact.active .contact-content .info .sub-title{
+    color: #f2f2f2;
+}
+.contact.active .right form .fields{
+    display: flex;
+}
+.contact.active .right form .field,
+.contact.active .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact.active .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact.active .right form .name{
+    margin-right: 10px;
+}
+.contact.active .right form .field input,
+.contact.active .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact.active .right form .field input:focus,
+.contact.active .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact.active .right form .textarea textarea{
+  padding-top: 10px;
+  resize: none;
+}
+.contact.active .right form .button-area{
+  display: flex;
+  align-items: center;
+}
+.contact.active .right form .button-area button{
+  color: #fff;
+  display: block;
+  width: 160px!important;
+  height: 45px;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  background: crimson;
+  border: 2px solid crimson;
+  transition: all 0.3s ease;
+}
+.contact.active .right form .button-area button:hover{
+  color: crimson;
+  background: none;
+}
+.contact.active .row{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    display: flex;
+}
+.contact.active .text, .fields{
+    padding-bottom: 22px;
+}
+
+/* footer section */
 footer{
     background: #111;
     padding: 15px 23px;
