@@ -108,10 +108,10 @@ options.forEach(option =>{
     varSOCI.style.display = "none";
 
     var span1 = document.getElementById('edu'); // Assumes element with id='edu'
-    var span2 = document.getElementById('exp'); // Assumes element with id='edu'
-    var span3 = document.getElementById('proj'); // Assumes element with id='edu'
-    var span4 = document.getElementById('skil'); // Assumes element with id='edu'
-    var span5 = document.getElementById('soci'); // Assumes element with id='edu'
+    var span2 = document.getElementById('exp'); // Assumes element with id='exp'
+    var span3 = document.getElementById('proj'); // Assumes element with id='proj'
+    var span4 = document.getElementById('skil'); // Assumes element with id='skil'
+    var span5 = document.getElementById('soci'); // Assumes element with id='soci'
 
     span1.onclick = function() {
         var div = document.getElementById('education');
