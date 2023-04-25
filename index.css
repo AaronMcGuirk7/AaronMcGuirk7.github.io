@@ -356,7 +356,7 @@ section .title::after{
     overflow-y: scroll; /* add vertical scroll bar */
     height: 500px; /* set height of the scrollable area */
   }
-.resume .resume-content .right .scrollable .edu,.exp,.proj,.skil,.soci {
+.resume .resume-content .scrollable .edu,.exp,.proj,.skil,.soci {
    display: none;
 }
 
@@ -366,19 +366,19 @@ section .title::after{
 .resume .resume-content .column{
     width: calc(50% - 30px);
 }
-.resume .resume-content .left {
+.resume .resume-content {
     margin-top: -120px;
 }
-.resume .resume-content .left .data {
+.resume .resume-content .data {
     margin-top: 60px;
 }
-.resume .resume-content .right {
+.resume .resume-content {
     margin-top: 40px;
 }
-.resume .resume-content .right .data {
+.resume .resume-content .data {
     margin-top: 30px;
 }
-.resume .resume-content .right .line::before{
+.resume .resume-content .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -386,26 +386,35 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.resume .resume-content .right .bars{
+.resume .resume-content .bars{
     margin-bottom: 15px;
 }
-.resume .resume-content .right .info{
+.resume .resume-content .info{
     display: flex;
     margin-bottom: 5px;
     align-items: center;
     justify-content: space-between;
 }
-.resume .resume-content .right span{
+.resume .resume-content .scrollable{
+    width: 300px;
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+    float: middle;
+    margin: auto;
+}
+.resume .resume-content span{
     font-weight: 500;
     font-size: 18px;
 }
-.resume .resume-content .right .line{
+.resume .resume-content .line{
     height: 5px;
     width: 100%;
     background: lightgrey;
     position: relative;
 }
-.resume .resume-content .right .line::before{
+.resume .resume-content .line::before{
     content: "";
     position: absolute;
     height: 100%;
@@ -413,19 +422,19 @@ section .title::after{
     top: 0;
     background: crimson;
 }
-.resume-content .right .html::before{
+.resume-content .html::before{
     width: 90%;
 }
-.resume-content .right .css::before{
+.resume-content .css::before{
     width: 60%;
 }
-.resume-content .right .js::before{
+.resume-content .js::before{
     width: 80%;
 }
-.resume-content .right .php::before{
+.resume-content .php::before{
     width: 50%;
 }
-.resume-content .right .mysql::before{
+.resume-content .mysql::before{
     width: 70%;
 }
 
@@ -513,7 +522,7 @@ section .title::after{
 .resume.active{
     background-color: #0a0c16;
 }
-.resume.active .resume-content .right .line{
+.resume.active .resume-content .line{
     background: lightgrey;
 }
 .resume.active .select-menu{
