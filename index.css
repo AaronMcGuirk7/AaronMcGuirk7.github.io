@@ -617,7 +617,6 @@ section .title::after{
 }
 /* projects section styling dark*/
 .projects.active{
-    margin-left: 75px;
     color:#fff;
     background: #111;
 }
@@ -631,53 +630,17 @@ section .title::after{
     content: "";
 }
 .projects.active .proj-content .card{
-    width: calc(33% - 20px);
     background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 50px 35px;
-    margin-top: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 .projects.active .proj-content .card:hover{
     background: crimson;
 }
-.projects.active .proj-content .card .box{
-    transition: all 0.3s ease;
-}
-.projects.active .proj-content .card:hover .box{
-    transform: scale(1.05);
-}
-.projects.active .proj-content .card i{
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
 .projects.active .proj-content .card:hover i{
     color: #fff;
 }
-.projects.active .proj-content .card .box .text{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
 .projects.active .proj-content .card a{
-    display: inline-block;
     background: crimson;
     color: #fff;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid crimson;
-    transition: all 0.3s ease;
-}
-.projects.active .proj-content .card a:hover{
-    color: crimson;
-    background: none;
 }
 
 /* contact section styling light*/
@@ -1000,7 +963,7 @@ footer span a:hover{
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 450px) {
     .home .home-content .text-2{
         font-size: 50px;
     }
@@ -1041,7 +1004,63 @@ footer span a:hover{
         flex-direction: column;
     }
     .projects .proj-content .card a{
+        text-align: center;
+        margin: auto;
         flex-direction: column;
+    }
+    .projects .proj-content .card{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+@media (max-width: 315px) {
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+    .about .about-content .right .text,
+    .skills .skills-content .left .text{
+        font-size: 19px;
+    }
+    .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    }
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .projects .proj-content{
+        margin: auto;
+        flex-direction: column;
+    }
+    .projects .proj-content .card .box .text{
+        font-size: 12px;
+    }
+    .projects .proj-content .card p{
+        text-align: center;
+        font-size: 10px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .projects .proj-content .card a{
+        font-size: 10px;
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        
     }
     .projects .proj-content .card{
         width: 100%;
