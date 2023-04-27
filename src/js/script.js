@@ -96,6 +96,30 @@ options.forEach(option =>{
 });
 //END
 
+//search bar
+document.getElementById("searchBar").addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) { // "Enter" key
+      event.preventDefault(); // prevent the form from submitting
+      scrollToSection();
+    }
+  });
+
+  function scrollToSection() {
+    var query = document.getElementById("searchBar").value.toLowerCase();
+    var sections = document.getElementsByTagName("section");
+    
+    for (var i = 0; i < sections.length; i++) {
+      var sectionTitle = sections[i].getElementsByTagName("h2")[0].textContent.toLowerCase();
+      
+      if (sectionTitle.includes(query)) {
+        sections[i].scrollIntoView({ behavior: 'smooth' });
+        break;
+      }
+    }
+  }
+
+//search bar end
+
     var varEDU = document.getElementById('education');
     var varEXP = document.getElementById('experience');
     var varPROJ = document.getElementById('project');
