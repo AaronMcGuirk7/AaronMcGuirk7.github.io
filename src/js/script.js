@@ -97,22 +97,16 @@ options.forEach(option =>{
 //END
 
 //search bar
-document.getElementById("searchBar").addEventListener("keydown", function(event) {
-    if (event.keyCode === 13) { // "Enter" key
-      event.preventDefault(); // prevent the form from submitting
-      scrollToSection();
-    }
-  });
-
-  function scrollToSection() {
+function scrollToSection() {
     var query = document.getElementById("searchBar").value.toLowerCase();
-    var sections = document.getElementsByTagName("section");
+    var sections = document.getElementsByTagName("#");
     
     for (var i = 0; i < sections.length; i++) {
-      var sectionTitle = sections[i].getElementsByTagName("h2")[0].textContent.toLowerCase();
+      var sectionTitle = sections[i].getElementsByTagName("#")[0].textContent.toLowerCase();
       
       if (sectionTitle.includes(query)) {
-        sections[i].scrollIntoView({ behavior: 'smooth' });
+        var id = sections[i].getAttribute("id");
+        location.href = "#" + id;
         break;
       }
     }
