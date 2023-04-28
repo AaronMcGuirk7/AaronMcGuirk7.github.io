@@ -17,7 +17,7 @@
 
 .navscrollable {
   overflow-y: scroll; /* add vertical scroll bar */
-  overflow-x: hidden;
+  overflow-x: hidden; /* hides x scroll */
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
   height: 600px; /* set height of the scrollable area */
