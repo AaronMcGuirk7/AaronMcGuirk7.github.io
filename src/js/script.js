@@ -116,7 +116,7 @@ function scrollToSection() {
 
     //query for unique searches
     if(query == "secret page"){
-        location.href = "settings.html";
+        location.href = "secret.html";
     }
     if(query == "instagram"){
         location.href = "https://www.instagram.com/aaron.mcguirk/";
