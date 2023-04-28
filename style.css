@@ -572,7 +572,7 @@
 }
 
 
-@media (max-width: 660px) {
+@media (max-width: 659px) {
   .navscrollable {
     height: 1000px; /* set height of the scrollable area */
   }
