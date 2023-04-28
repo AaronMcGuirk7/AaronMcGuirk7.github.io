@@ -37,6 +37,7 @@
 }
 .sidebar.open .tmiddle {
   float: middle;
+  
 }
 .sidebar.open .tright {
   float: right;
@@ -609,6 +610,17 @@
   }
 }
 @media (max-height: 450px) {
+  .sidebar.open #toggle {
+    margin-left: -20px;
+  }
+  .navscrollable {
+    height: 300px; /* set height of the scrollable area */
+  }
+}
+@media (max-height: 430px) {
+  .sidebar.open #toggle {
+    margin-left: -10px;
+  }
   .navscrollable {
     height: 300px; /* set height of the scrollable area */
   }
