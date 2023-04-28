@@ -97,18 +97,24 @@ options.forEach(option =>{
 //END
 
 //search bar
+var searchBar = document.getElementById("searchBar");
+
+  searchBar.addEventListener("keyup", function(event) {
+    if (event.key === "Enter") {
+      var searchQuery = searchBar.value;
+      console.log(searchQuery);
+      // Add code here to do something with the search query, such as search a database or update the page
+      scrollToSection();
+    }
+  });
+
 function scrollToSection() {
     var query = document.getElementById("searchBar").value.toLowerCase();
-    var sections = document.getElementsByTagName("#");
-    
-    for (var i = 0; i < sections.length; i++) {
-      var sectionTitle = sections[i].getElementsByTagName("#")[0].textContent.toLowerCase();
-      
-      if (sectionTitle.includes(query)) {
-        var id = sections[i].getAttribute("id");
-        location.href = "#" + id;
-        break;
-      }
+
+    location.href = "#" + query;
+
+    if(query == "secret page"){
+        location.href = "settings.html";
     }
   }
 
