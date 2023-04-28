@@ -46,7 +46,7 @@
 }
 
 .sidebar.open #toggle {
-  margin-left: -20px;
+  margin-left: -5px;
   display: flex;
   position: relative;
   width: 90px;
@@ -610,17 +610,11 @@
   }
 }
 @media (max-height: 450px) {
-  .sidebar.open #toggle {
-    margin-left: -20px;
-  }
   .navscrollable {
     height: 300px; /* set height of the scrollable area */
   }
 }
 @media (max-height: 430px) {
-  .sidebar.open #toggle {
-    margin-left: 0px;
-  }
   .navscrollable {
     height: 300px; /* set height of the scrollable area */
   }
