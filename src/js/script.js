@@ -111,10 +111,50 @@ var searchBar = document.getElementById("searchBar");
 function scrollToSection() {
     var query = document.getElementById("searchBar").value.toLowerCase();
 
+    //query for inputted page
     location.href = "#" + query;
 
+    //query for unique searches
     if(query == "secret page"){
         location.href = "settings.html";
+    }
+    if(query == "instagram"){
+        location.href = "https://www.instagram.com/aaron.mcguirk/";
+    }
+    if(query == "twitter"){
+        location.href = "https://twitter.com/aaronmcguirk_";
+    }
+    if(query == "youtube"){
+        location.href = "https://www.youtube.com/@AaronMcGuirk";
+    }
+    if(query == "linkedin"){
+        location.href = "https://www.linkedin.com/in/aaronmcguirk";
+    }
+    if(query == "github"){
+        location.href = "https://github.com/AaronMcGuirk007";
+    }
+    if(query == "email"){
+        location.href = "mailto:amcguirkbusiness@gmail.com";
+    }
+
+    //project query searches
+    if(query == "final website"){
+        location.href = "https://github.com/AaronMcGuirk7/AaronMcGuirk7.github.io";
+    }
+    if(query == "ar tour app"){
+        location.href = "https://github.com/SienaCollegeSoftwareEngineering/SoS_F19S20_F20S21_F21S22_F22S23";
+    }
+    if(query == "wii tank game"){
+        location.href = "https://github.com/AaronMcGuirk007/Wii-Tank-Game";
+    }
+    if(query == "java animations"){
+        location.href = "https://github.com/AaronMcGuirk007/Java-Animation";
+    }
+    if(query == "python text clustering"){
+        location.href = "https://github.com/AaronMcGuirk007/Text-Clustering-Python";
+    }
+    if(query == "first website"){
+        location.href = "https://github.com/AaronMcGuirk007/First-Website-Intro-HTML-CSS";
     }
   }
 
