@@ -15,6 +15,16 @@
     z-index: 100;
 }
 
+.navscrollable {
+  overflow-y: scroll; /* add vertical scroll bar */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+  height: 600px; /* set height of the scrollable area */
+}
+.navscrollable::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
 .sidebar.open .toggleColor{
   margin-left: 6px;
 }
@@ -564,5 +574,31 @@
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;
+  }
+}
+
+@media (max-height: 670px) {
+  .navscrollable {
+    height: 600px; /* set height of the scrollable area */
+  }
+}
+@media (max-height: 550px) {
+  .navscrollable {
+    height: 400px; /* set height of the scrollable area */
+  }
+}
+@media (max-height: 450px) {
+  .navscrollable {
+    height: 300px; /* set height of the scrollable area */
+  }
+}
+@media (max-height: 384px) {
+  .navscrollable {
+    height: 240px; /* set height of the scrollable area */
+  }
+}
+@media (max-height: 340px) {
+  .navscrollable {
+    height: 150px; /* set height of the scrollable area */
   }
 }

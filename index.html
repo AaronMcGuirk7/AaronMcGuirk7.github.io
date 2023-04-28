@@ -22,108 +22,113 @@
 <body>
     <div id="preloader"></div>
     <div class="sidebar">
-    <div class="logo-details">
-        <div class="logo_name"><img src="src/img/custlogo.png" id="dimg"><img src="src/img/custlogodark.png" id="wimg"></div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-         <i class='bx bx-search' ></i>
-         <input type="text" id="searchBar" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li>
-       <a href="#home">
-         <i class='bx bx-home' ></i>
-         <span class="links_name">Home</span>
-       </a>
-       <span class="tooltip">Home</span>
-     </li>
-     <li>
-       <a href="#about">
-         <i class='bx bx-user' ></i>
-         <span class="links_name">About</span>
-       </a>
-       <span class="tooltip">About</span>
-     </li>
-     <li>
-       <a href="#hobbies">
-         <i class='bx bx-bolt-circle' ></i>
-         <span class="links_name">Hobbies</span>
-       </a>
-       <span class="tooltip">Hobbies</span>
-     </li>
-     <li>
-      <a href="#resume">
-        <i class='bx bx-file' ></i>
-        <span class="links_name">Resume</span>
-      </a>
-      <span class="tooltip">Resume</span>
-    </li>
-     <li>
-       <a href="#projects">
-         <i class='bx bx-folder' ></i>
-         <span class="links_name">Projects</span>
-       </a>
-       <span class="tooltip">Projects</span>
-     </li>
-     <li>
-       <a href="#contact">
-         <i class='bx bx-envelope' ></i>
-         <span class="links_name">Contact</span>
-       </a>
-       <span class="tooltip">Contact</span>
-     </li>
-     <li>
-        <!--
-      <a href="explore.html">
-        <i class='bx bx-grid-alt'></i>
-        <span class="links_name">Explore</span>
-      </a>
-       <span class="tooltip">Explore</span>
-        -->
-    </li>
-     <li>
-        <div class="toggleColor">
-            <div class="tleft">
-                <i class='bx bx-sun'></i>
-            </div>
-            <div class="tmiddle">
-                <div id="toggle">
-                    <i class="indicator"></i>
+
+        <div class="logo-details">
+            <div class="logo_name"><img src="src/img/custlogo.png" id="dimg"><img src="src/img/custlogodark.png" id="wimg"></div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+
+    <div class="navscrollable">
+        <ul class="nav-list">
+          <li>
+             <i class='bx bx-search' ></i>
+             <input type="text" id="searchBar" placeholder="Search...">
+             <span class="tooltip">Search</span>
+          </li>
+          <li>
+           <a href="#home">
+             <i class='bx bx-home' ></i>
+             <span class="links_name">Home</span>
+           </a>
+           <span class="tooltip">Home</span>
+         </li>
+         <li>
+           <a href="#about">
+             <i class='bx bx-user' ></i>
+             <span class="links_name">About</span>
+           </a>
+           <span class="tooltip">About</span>
+         </li>
+         <li>
+           <a href="#hobbies">
+             <i class='bx bx-bolt-circle' ></i>
+             <span class="links_name">Hobbies</span>
+           </a>
+           <span class="tooltip">Hobbies</span>
+         </li>
+         <li>
+          <a href="#resume">
+            <i class='bx bx-file' ></i>
+            <span class="links_name">Resume</span>
+          </a>
+          <span class="tooltip">Resume</span>
+        </li>
+         <li>
+           <a href="#projects">
+             <i class='bx bx-folder' ></i>
+             <span class="links_name">Projects</span>
+           </a>
+           <span class="tooltip">Projects</span>
+         </li>
+         <li>
+           <a href="#contact">
+             <i class='bx bx-envelope' ></i>
+             <span class="links_name">Contact</span>
+           </a>
+           <span class="tooltip">Contact</span>
+         </li>
+         <li>
+            <!--
+          <a href="explore.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Explore</span>
+          </a>
+           <span class="tooltip">Explore</span>
+            -->
+        </li>
+         <li>
+            <div class="toggleColor">
+                <div class="tleft">
+                    <i class='bx bx-sun'></i>
+                </div>
+                <div class="tmiddle">
+                    <div id="toggle">
+                        <i class="indicator"></i>
+                    </div>
+                </div>
+                <div class="tright">
+                    <i class='bx bx-moon'></i>
                 </div>
             </div>
-            <div class="tright">
-                <i class='bx bx-moon'></i>
-            </div>
-        </div>
-        <span class="tooltip">Display Mode</span>
-     </li>
-     <script>
-        const toggle = document.getElementById('toggle');
-        toggle.onclick = function(){
-            toggle.classList.toggle('active')
-            home.classList.toggle('active')
-            about.classList.toggle('active')
-            hobbies.classList.toggle('active')
-            resume.classList.toggle('active')
-            projects.classList.toggle('active')
-            contact.classList.toggle('active')
-            sidebar.classList.toggle('active')
-        }
-     </script>
+            <span class="tooltip">Display Mode</span>
+         </li>
+         <script>
+            const toggle = document.getElementById('toggle');
+            toggle.onclick = function(){
+                toggle.classList.toggle('active')
+                home.classList.toggle('active')
+                about.classList.toggle('active')
+                hobbies.classList.toggle('active')
+                resume.classList.toggle('active')
+                projects.classList.toggle('active')
+                contact.classList.toggle('active')
+                sidebar.classList.toggle('active')
+            }
+         </script>
+    
+         <li class="profile">
+             <div class="profile-details">
+               <div class="name_job">
+                 <div class="name">Aaron McGuirk</div>
+                 <div class="job">Copyright © 2023</div>
+               </div>
+             </div>
+             <i class='bx bx-check-shield' id="copyright" ></i>
+         </li>
+        </ul>
+      </div>
 
-     <li class="profile">
-         <div class="profile-details">
-           <div class="name_job">
-             <div class="name">Aaron McGuirk</div>
-             <div class="job">Copyright © 2023</div>
-           </div>
-         </div>
-         <i class='bx bx-check-shield' id="copyright" ></i>
-     </li>
-    </ul>
-  </div>
+    </div>
   
   <!-- home section start -->
   <section class="home" id="home">
